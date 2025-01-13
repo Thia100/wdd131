@@ -1,0 +1,118 @@
+/* using 1fr on grid item evenly distributes space
+using span on grid items is a shorthand for grid-colum: 1/2
+ justify-item(for aligning container horizontally)
+ align-item(for aligning container vertically i.e all elements)
+ align/justify self(for child elements)*/
+
+:root{
+    --primary-color:#0d1b2a;
+    --secondary-color:#d4d4ce;
+    --accent-1:#343A40;
+    --accent2:#287094;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Montserrat", serif;
+}
+body{
+    background: #f6f6ee;
+    max-width: 100%
+}
+a{
+    text-decoration: none;
+    font-weight:400;
+    font-size: 15px;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    background-color:var(--accent-1);
+    padding: 5px;
+    width: 100%;
+} 
+.nav-links {
+    display: flex; 
+    align-items: center;/* Use flexbox for the nav-links */
+    justify-content: center;
+    margin: 2%;
+    
+} 
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for the ul */
+}
+
+nav li {
+    margin: 0 60px; /* Space between the list items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Default link color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #007BFF; /* Change color on hover */
+    text-decoration:wavy; /* Optional: underline on hover */
+}
+
+.card img{
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(0 0 0.75rem #3E3E3E);
+    border-radius: 10px 60px 30px;
+}
+.container{     
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: 500px 500px;
+    gap: 30px;
+    background: radial-gradient(#ffffff, #f6f6ee);
+    border-radius: 30px 30px;
+    align-items: center;
+    justify-items: center;
+}
+.card{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px; 
+    align-items: center;
+    justify-items: center;
+    gap: 60px;
+}
+
+.container .card{
+    text-align: center;
+    padding: 20px;
+}
+.container .card:nth-child(1){
+    grid-column: 1 /3;
+    display: flex;
+    align-items: center;
+}
+.container .card:nth-child(2){
+    grid-column: 1 /3;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background: var(--accent2);
+    padding: 5px;
+}
