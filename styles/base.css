@@ -93,7 +93,6 @@ nav a:hover {
 }
 
 .card:nth-child(2) nav ul li{
-    grid-template-columns: 2/3;
     color: rgb(13, 91, 186);
     margin-top: 8px;
 }
