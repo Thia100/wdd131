@@ -110,5 +110,7 @@ footer {
 }
 #last-modified {
     display: block;
+    max-width: 500px;
+    margin: auto;
     color:#fdecd8;
 }
