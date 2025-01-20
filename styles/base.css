@@ -30,7 +30,6 @@ h1 {
     background-color: var(--primary-color);
     padding: 7px;
     color: #ffffff;
-    width: 100%;
 }
 
 .nav-links {
@@ -112,5 +111,5 @@ footer {
 }
 #last-modified {
     display: block;
-    color:burlywood;
+    color:#fdecd8;
 }
