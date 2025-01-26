@@ -1,5 +1,5 @@
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Roboto", serif;
@@ -65,6 +65,7 @@ img {
 }
   
 figcaption {
+  font-family: "Roboto", serif;
   align-self: center;
   justify-self: center;
   font-size: 14px;
