@@ -1,0 +1,61 @@
+
+@media screen and (min-width:1000px){
+    .hero img{
+        content: url("../images/naija-large.webp");
+        width:100%;
+        display: block;
+    }
+    .hero{
+        position: relative;
+        border-top: 1rem solid var(--accent2); 
+        border-bottom: .5rem solid var(--accent2); 
+
+    }
+    main{
+        position: relative;
+    }
+    .data, .weather{
+        position: absolute;
+        background-color: var(--accent2);
+        color: black;
+        width: 250px;
+        padding: 3rem 1rem .5rem 2rem;
+        border-radius: 12px;
+        text-align: left;
+    }
+    .data{
+        left: 2%;
+        top: 7%;
+        padding-right: 2rem;
+    }
+    .data h2{
+        background-color: #31493C;
+        color: white;
+        text-align: left;
+        padding: 1.2rem;
+        margin:-2rem 4rem 1rem -2.5rem;
+        border-radius: 8px;
+    }
+    .weather h2{
+        background-color: #31493C;
+        color: white;
+        text-align: left;
+        padding: 1.2rem;
+        margin:-2rem 4rem 1rem -2.5rem ;
+        border-radius: 8px;
+    }
+    .weather{
+        right: 1%;
+        top: 50%;
+    }
+    .weather-icon{
+        display: block;
+        position: absolute;
+        top: 18.5%;
+        left: 150px;
+        transform: translate(-50%);
+    }
+    .weather-icon img{
+        width: 55px;
+    }
+}

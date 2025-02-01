@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fathia Diekola Gbolahan">
+    <meta name="description" content="Country home page">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Country Homepage: Nigeria</title>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/naija-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/naija-medium.webp" media="(min-width: 550px)">
+                <img src="images/naija-small.webp" alt="image showing houses in nigeria">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 923,768 sqkm</li>
+                <li><strong>Population:</strong>223.8 million (2023)</li>
+                <li><strong>Abuja</strong></li>
+                <li><strong>Languages:</strong>Yoruba, Igbo, Hausa</li>
+                <li><strong>Currency:</strong>Naira</li>
+                <li><strong>Time Zone:</strong>GMT +1</li>
+                <li><strong>Calling Code:</strong>+234</li>
+                <li><strong>Internet TLD:</strong>.ng</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+                <img src="images/weathericon.svg" alt="weather icon">
+            </div>
+            <ul>
+                <li><strong>Temperature:</strong>10°C</li>
+                <li><strong>Conditions:</strong>Partly cloudy</li>
+                <li><strong>wind:</strong>5 km/h</li>
+                <li><strong>Wind Chill:</strong> 9.8°C</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> 💠Fathia Gbolahan💠 Nigeria</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
