@@ -7,7 +7,7 @@ const mobileMenu = document.getElementById('mobile-menu');
 const navList = document.querySelector('.nav-list');
 
 mobileMenu.addEventListener('click', () => {
-  navList.classList.toggle('active'); // Add/remove 'active' class to show/hide the menu
+  navList.classList.toggle('active'); 
 });
 
 
@@ -69,7 +69,32 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    {
+      templeName: "Yigo Guam",
+      location: "Yigo, Guam",
+      dedicated: "2022, May, 22",
+      area: 6861,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495-main.jpg"
+
+    },
+    {
+      templeName: "Feather River",
+      location: "Yuba City, California",
+      dedicated: "2023, October, 8",
+      area: 41665,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/feather-river-california-temple/feather-river-california-temple-39697-main.jpg"
+    },
+    {
+      templeName: "Belem Brazil",
+      location: "Belem, Brazil",
+      dedicated: "2022, November, 20",
+      area: 26675,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/belem-brazil-temple/belem-brazil-temple-31310-main.jpg"
+    }
+    
   ];
 function createTempleCard(templesList = temples){
     document.querySelector("#gallery").innerHTML = "";
@@ -87,7 +112,9 @@ function createTempleCard(templesList = temples){
         area.innerHTML = `<span class = "label">Size:</span>${temple.area} sgft`;
         img.setAttribute("src", temple.imageUrl);
         img.setAttribute("alt", `${temple.templeName} Temple`);
-        img .setAttribute("loading", "lazy");
+        img.setAttribute("loading", "lazy");
+        img.setAttribute("width", "450");
+        img.setAttribute("height", "300");
 
 
         card.appendChild(name);
