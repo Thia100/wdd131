@@ -1,0 +1,11 @@
+*{
+    background-color: rgb(241, 230, 217);
+}
+img{
+    width: 400px;
+    /* display: block; */
+}
+figure{
+    align-self: center;
+    justify-self: center;
+}
