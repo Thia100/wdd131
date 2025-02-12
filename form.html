@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fathia Diekola Gbolahan">
+    <meta name="description" content="Product Review Form">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Product Review Form</title>
+</head>
+<body>
+    <header><h1>Product Review Form</h1></header>
+    <main>
+        <form method="get" action="review.html" class="product-form">
+            <div class="form-group">
+                <label for="product-names">Product Name</label>
+                <select id="product-names" name="product-names" required>
+                    <option disabled selected value="">select a product</option>
+                    <option value="flux-capacitor"></option>
+                    <option value="power-laces"></option>
+                    <option value="time-circuits"></option>
+                    <option value="low-voltage-reactor"></option>
+                    <option value="warpequalizer"></option>
+                </select>
+            </div>
+            <div class="rating">
+                <label>Overall Rating</label>
+                <label for="star1">
+                    <input type="radio" name="rating" id="star1" required>★
+                </label>
+                <label for="star2">
+                    <input type="radio" name="rating" id="star2" required>★ ★
+                </label>
+                <label for="star3">
+                    <input type="radio" name="rating" id="star3" required>★★★
+                </label>
+                <label for="star4">
+                    <input type="radio" name="rating" id="star4" required>★★★★
+                </label>
+                <label for="star5">
+                    <input type="radio" name="rating" id="star5" required>★★★★★
+                </label>
+            </div>
+            <div class="date">
+                <label>Date of Installation</label>
+                <input type="date" name="install-date" id="install-date" required>
+            </div>
+            <div class="feature">
+                <p>Which feature did you find useful?<span>(Check all that apply)</span></p>
+                <label><input type="checkbox" name="feature" id="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="feature" id="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="feature" id="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="feature" id="design" value="yes">Design</label>
+            </div>
+            <div class="review-group">
+                <label for="comments">Written Review<span>(Optional)</span></label>
+                <textarea name="comments" id="comments" cols="50" rows="4"></textarea>
+            </div>
+            <div class="name-group">
+                <label for="name">Name<span>(Optional)</span></label>
+                <input type="text" name="name" id="name">
+            </div>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> 💠Fathia Gbolahan💠 Nigeria</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
