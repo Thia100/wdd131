@@ -89,7 +89,6 @@ span{
     box-shadow: 5px 5px #8bd3dd;
     border: none;
     cursor: pointer;
-
 }
 
 footer{
@@ -99,7 +98,6 @@ footer{
     justify-items: center;
     background: #edede9;
     padding: 10px;
-    display: absolute;
     color: #001858;
     margin-top: 5%;
 }
