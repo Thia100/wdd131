@@ -1,0 +1,123 @@
+:root{
+    --background:#f3d2c1;
+    --text1:#a4161a;
+    --text2:#47126b;
+    --highlight:#8bd3dd;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cardo", serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url('../images/hero.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: var(--text1);
+    position: relative;
+}
+.form-box h1::after{
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 20px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: left;
+    font-size: 15px;
+}
+form p a{
+    text-decoration: none;
+    color: var(--text2);
+    padding-left: 5px;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: var(--text1);
+    color: white;
+    height: 40px;
+    border-radius:20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn {
+    display: inline-block;
+    background: var(--text1); 
+    color: white;
+    text-align: center;
+    padding: 10px 45px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.disable {
+    background: #eaeaea;
+    color: var(--text2);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.input-group{
+    height: 280px;
+}
+.btn-field button.disable{
+    background: #eaeaea;
+    color: var(--text2);
+}
