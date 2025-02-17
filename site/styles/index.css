@@ -47,6 +47,7 @@
     bottom: -9px;
     left: 50%;
     transform: translate(-50%);
+    background-color: var(--text2);
 }
 .input-field{
     background: #eaeaea;
@@ -93,26 +94,7 @@ form p a{
     outline: 0;
     cursor: pointer;
     transition: 1s;
-}
-.btn {
-    display: inline-block;
-    background: var(--text1); 
-    color: white;
-    text-align: center;
-    padding: 10px 45px;
-    border-radius: 20px;
-    text-decoration: none;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.disable {
-    background: #eaeaea;
-    color: var(--text2);
-    padding: 10px 20px;
-    border-radius: 20px;
+    font-size: 17px;
 }
 .input-group{
     height: 280px;
@@ -121,3 +103,4 @@ form p a{
     background: #eaeaea;
     color: var(--text2);
 }
+
