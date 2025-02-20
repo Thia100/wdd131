@@ -48,7 +48,7 @@ body{
 
 
 
-.nav-list button{
+.nav-list .cta{
     padding: 9px 25px;
     background-color: var(--secondary);
     border: none;
@@ -60,7 +60,7 @@ body{
     font-size: 19px;
     font-weight: 600;
 }
-button:hover{
+.cta:hover{
     text-decoration: underline;
 }
 
@@ -346,13 +346,13 @@ span{
     padding: 50px 60px 70px;
     text-align: center;
 }
-.form-box h1{
+.form-box h5{
     font-size: 30px;
     margin-bottom: 60px;
     color: var(--secondary);
     position: relative;
 }
-.form-box h1::after{
+.form-box h5::after{
     content: "";
     width: 50px;
     height: 4px;
