@@ -4,21 +4,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const passwordInput = document.getElementById("passwordField");
     const signUpBtn = document.getElementById("signupbtn");
 
-   
-    signUpBtn.style.pointerEvents = "none";
-    signUpBtn.style.opacity = "1";
+    
+    signUpBtn.disabled = true;
 
+    
     function validateFields() {
         if (
             nameInput.value.trim() !== "" &&
             emailInput.value.trim() !== "" &&
             passwordInput.value.trim() !== ""
         ) {
-            signUpBtn.style.pointerEvents = "auto";
-            signUpBtn.style.opacity = "1";
-        } else {
-            signUpBtn.style.pointerEvents = "none";
-            signUpBtn.style.opacity = "1";
+            
+            signUpBtn.disabled = false;
+            signUpBtn.style.opacity = "1"; 
+        } 
+        else {
+
+            signUpBtn.disabled = true;
+            signUpBtn.style.opacity = "0.5"; 
         }
     }
 

@@ -11,12 +11,8 @@
 }
 body{
     min-height: 100vh;
-    font-family: "Roboto", serif;
+    font-family: "Roboto", sans-serif;
     background-color: var(--text1);
-}
-p{
-    line-height: 1.6;
-    font-size: 1.25rem;
 }
 
 
@@ -35,7 +31,7 @@ p{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 .nav-list li{
-    list-style: none;
+    list-style-type: none;
     display: inline-block;
     padding: 0px 20px;
 }
@@ -43,7 +39,7 @@ p{
     text-decoration: none;
     transition: all 0.3s ease 0s;
     color: var(--text2);
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 600;
 }
 .nav-list li a:hover{
@@ -58,9 +54,8 @@ p{
     transition: all 0.3s ease 0s;
     margin-left: 20px;
     color: var(--text2);
-    font-size: 1.2rem;
+    font-size: 19px;
     font-weight: 600;
-    text-decoration: none;
 }
 .nav-list .menu-button{
     display: none;
@@ -92,10 +87,11 @@ p{
 }
 .sidebar a{
     width: 100%;
+    list-style: none;
     text-decoration: none;
     transition: all 0.3s ease 0s;
     color: var(--primary);
-    font-size: 1.2rem;
+    font-size: 19px;
     font-weight: 600;
 }
 .sidebar  li a:hover{
@@ -108,7 +104,6 @@ p{
     margin-right: auto;
     width: 200px;
 }
-
 .hero-image{
     background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.1)), url('../images/newhero.webp');
     background-position: center;
@@ -121,85 +116,26 @@ p{
 }
 .hero-image .hero-text h1{
     font-weight: 500;
-    font-size: 3.2rem;
-    color: var(--text1);
+    font-size: 50px;
+    color: var(--text2);
     text-align: center;
 }
 .hero-image .hero-text p{
-    font-size: 1.9rem;
+    font-size:30px ;
     font-weight: 500;
     line-height: 40px;
-    color: var(--text1);
+    color: var(--text2);
     text-align: center;
 }
-
-
-
-main{
-    margin: 6% auto;
-    max-width: 1500px;
-}
-.stories{
-    max-width: 100%;
-}
-.stories h2{
-    text-align: center;
-    margin: 0 auto 20px auto;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--primary);
-    padding: 25px;
-    max-width: 50%;
-}
-.story-content img{
-    display: block;
-    margin: 0 auto;
-    max-height: 100vh; 
-}
-
-.short-story{
-    max-width: 70%;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgba(164, 22, 26, 0.1);
-    margin: 20px auto;
-    position: relative; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-}
-
-.short-story img{
-    margin: auto;
-    width: 200px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-.short-story p span {
-    position: absolute; 
-    right: 0; 
-    bottom: 0; 
-    font-style: italic; 
-    color: #767b91; 
-}
-.story{
-    margin-top: 100px;
-}
-.short-story p{
-    color: var(--secondary);
-}
-
-
-
 
 
 
 @media (max-width: 1000px) {
     .hero-image .hero-text h1{
-        font-size: 2.5rem;
+        font-size: 40px;
     }
     .hero-image .hero-text p{
-        font-size: 1.6rem;
+        font-size: 25px;
     }
     .nav-list .hideOnMobile{
         display: none;
@@ -236,6 +172,190 @@ main{
 }
 
 
+main {
+    padding: 20px;
+    background-color: var(--text2); 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.card {
+    position: relative; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--text1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card img {
+    width: 100%; /* Make image fill the card width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+}
+
+.card .intro {
+    padding: 15px; /* Padding inside the card */
+}
+
+.card h2 {
+    position: absolute; /* Position h2 on top of the image */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    color: #fff; /* White text for contrast */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px 15px; /* Padding for the h2 */
+    border-radius: 5px; /* Rounded corners for the h2 background */
+    font-size: 1.5rem; /* Larger font size */
+    margin: 0; /* Remove default margin */
+}
+
+.card p {
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark text color */
+    margin-top: 10px; /* Space between h2 and p */
+}
+
+.card p span {
+    font-weight: bold; /* Make the span text bold */
+    color: #a4161a; /* Highlight color for the span */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* 1 card per row on smaller screens */
+    }
+}
+/* .container img{
+    width: 600px;
+     border-radius: 3px; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    align-items: center;
+    justify-items: center;
+    background:whitesmoke;
+    gap: 30px;
+}
+.card{
+    align-self: center;
+    justify-self: center;
+} */
+/* .card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+.intro{
+    height: 500px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27,27,27, .5);
+    color: white;
+    bottom: 240px;
+}
+h2{
+    margin: 10px;
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.card:hover{
+    cursor: pointer;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -260,7 +380,7 @@ ul{
     padding: 0 15px;
 }
 .footer-col h5{
-    font-size: 1.3rem;
+    font-size:18px;
     color: var(--text1);
     text-transform: capitalize;
     margin-bottom: 50px;
@@ -281,7 +401,7 @@ ul{
     margin-bottom: 10px;
 }
 .footer-col ul li a{
-    font-size: 1rem;
+    font-size: 16px;
     text-transform: capitalize;
     color: var(--text2);
     text-decoration: none;
@@ -338,7 +458,7 @@ ul{
     line-height: 1.6;
     font-size: 1.4rem;
 }
-.section_2 i{
+.section-2 i{
     font-size: 4rem;
 }
 .answer{
