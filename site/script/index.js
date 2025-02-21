@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
     passwordInput.addEventListener("input", validateFields);
 
    
-    signUpBtn.addEventListener("click", function () {
+    signUpBtn.addEventListener("click", function (event) {
+        event.preventDefault(); 
+    
         if (
             nameInput.value.trim() === "" ||
             emailInput.value.trim() === "" ||
