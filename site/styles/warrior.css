@@ -202,16 +202,20 @@ main {
         width: 50%;
         margin-bottom: 30px;
     }
-
-  
     .story {
         width: calc(50% - 20px); 
+    }
+    .about-col figcaption{
+        font-size: 14px;
     }
 }
 
 @media (max-width: 600px) {
     .story {
         width: 100%; 
+    }
+    .about-col figcaption{
+        font-size: 14px;
     }
 }
 
