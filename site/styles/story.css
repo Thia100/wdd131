@@ -121,12 +121,12 @@ p{
 }
 .hero-image .hero-text h1{
     font-weight: 500;
-    font-size: 3.2rem;
+    font-size: 3rem;
     color: var(--text1);
     text-align: center;
 }
 .hero-image .hero-text p{
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 40px;
     color: var(--text1);
@@ -199,7 +199,7 @@ main{
         font-size: 2.5rem;
     }
     .hero-image .hero-text p{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .nav-list .hideOnMobile{
         display: none;

@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     signUpBtn.disabled = true;
+    loadFormData();
 
     
     function validateFields() {
@@ -43,3 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+function saveFormData() {
+    const formData = {
+        name: nameInput.value.trim(),
+        email: emailInput.value.trim(),
+        password: passwordInput.value.trim(),
+        country: countrySelect.value,
+    };
+    localStorage.setItem("signUpFormData", JSON.stringify(formData));
+}
+

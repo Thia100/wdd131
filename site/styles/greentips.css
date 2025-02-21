@@ -116,12 +116,12 @@ body{
 }
 .hero-image .hero-text h1{
     font-weight: 500;
-    font-size: 50px;
+    font-size: 3rem;
     color: var(--text2);
     text-align: center;
 }
 .hero-image .hero-text p{
-    font-size:30px ;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 40px;
     color: var(--text2);
@@ -132,10 +132,10 @@ body{
 
 @media (max-width: 1000px) {
     .hero-image .hero-text h1{
-        font-size: 40px;
+        font-size: 2.5rem;
     }
     .hero-image .hero-text p{
-        font-size: 25px;
+        font-size: 1.5rem;
     }
     .nav-list .hideOnMobile{
         display: none;
@@ -175,6 +175,7 @@ body{
 main {
     padding: 20px;
     background-color: var(--text2); 
+    margin: 50px;
 }
 
 .container {
@@ -182,7 +183,7 @@ main {
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
     max-width: 1200px; 
-    margin: 0 auto; 
+    margin: 20px auto; 
 }
 
 .card {
