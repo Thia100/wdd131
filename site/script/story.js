@@ -6,3 +6,4 @@ function hideSidebar(){
   const hidebar = document.querySelector(".sidebar");
   hidebar.style.display = "none";
 }
+
